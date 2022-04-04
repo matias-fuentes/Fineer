@@ -1,0 +1,102 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+.red
+{
+    color: #ea433b;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0rem 2.4rem;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    border-top: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgba(238, 242, 241, 255);
+}
+
+th, td {
+    padding: 0.8rem 0rem;
+}
+
+.total-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    margin-right: 3.6rem;
+    padding: 0.8rem 0rem;
+}
+
+.resume {
+    background-color: #007bff !important;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sell-form-control {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sell-form-control > * {
+    margin-bottom: 1rem;
+    width: 20% !important;
+}

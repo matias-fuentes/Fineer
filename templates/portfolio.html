@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block portfolio %}
+
+    <table action="/" method="get">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ cash }}</td>
+            </tr>
+            {% for i in range(portfLength) %}
+                <tr>
+                    <td>{{ quotes[i].symbol }}</td>
+                    <td>{{ quotes[i].name }}</td>
+                    <td>{{ quotes[i].shares }}</td>
+                    <td>{{ quotes[i].price }}</td>
+                    <td>{{ quotes[i].total }}</td>
+                </tr>
+            {% endfor %}
+            <tr class="resume">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ total }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
