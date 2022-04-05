@@ -1,8 +1,6 @@
 [Fineer](https://cs50.harvard.edu/college/2020/fall/psets/9/finance/#c50-finance)
 =======================================================================================
 
-### ** WARNING! THE REGISTER AND LOG IN FEATURES ARE CURRENTLY IN DEVELOPMENT AND MIGHT SEND FALSE ERROR MESSAGES. TRY TO IGNORE THEM! **
-
 Implement a website via which users can "buy" and "sell" stocks, a la the below.
 
 ![C$50 Finance](https://cs50.harvard.edu/college/2020/fall/psets/9/finance/finance.png)
