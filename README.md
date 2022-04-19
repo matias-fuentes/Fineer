@@ -3,6 +3,10 @@
 
 Implement a website via which users can "buy" and "sell" stocks, a la the below.
 
+If you wanna be a pro stock trader, then Fineer is YOUR choice. Buy and sell all kind of NASDAQ's stocks, while at the meantime, improve your trading skills! Because Fineer is the ultimate stock trading training app due to its test mode. Sign in now and get $10,000 to operate as artificial money!
+
+With Fineer, take your first steps in your journey to become a pro trader, without needing to risk your own real money. Instead, use our $10,000 welcome bonus in our test mode!
+
 ![C$50 Finance](https://cs50.harvard.edu/college/2020/fall/psets/9/finance/finance.png)
 
 ## Background
