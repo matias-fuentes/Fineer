@@ -4,13 +4,11 @@ from datetime import datetime
 from dotenv import load_dotenv, find_dotenv
 from werkzeug.security import generate_password_hash
 from flask import Flask, redirect, render_template, request, session
-from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
 from helpers import (
     getDbTable,
     getMongoConnection,
     getLoginId,
     isValidLogin,
-    apology,
     login_required,
     lookup,
     usd,
@@ -173,7 +171,8 @@ def buy():
                 return redirect("/")
 
         else:
-            return apology("Invalid shares value. Please, try again")
+            errorMessage = "Invalid shares value. Please, try again"
+            return render_template("buy.html", errorMessage=errorMessage)
 
     else:
         return render_template("buy.html", loginId=loginId)
@@ -252,7 +251,8 @@ def quote():
         symbol = request.form.get("symbol")
 
         if not symbol:
-            return apology("Invalid symbol. Please, try again")
+            errorMessage = "Invalid symbol. Please, try again"
+            return render_template("quote.html", errorMessage=errorMessage)
 
         stockData = lookup(symbol)
         return render_template(
@@ -450,15 +450,3 @@ def sell():
 
     connection.close()
     return render_template("sell.html", ownedSymbols=ownedSymbols, loginId=loginId)
-
-
-def errorhandler(e):
-    """Handle error"""
-    if not isinstance(e, HTTPException):
-        e = InternalServerError()
-    return apology(e.name, e.code)
-
-
-# Listen for errors
-for code in default_exceptions:
-    app.errorhandler(code)(errorhandler)
