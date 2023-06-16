@@ -1,0 +1,13 @@
+{% extends "layout.html" %} {% block quote %} {% if errorMessage %}
+<div class="error-container">
+    <p class="error">{{ errorMessage }}</p>
+</div>
+{% endif %}
+<form action="/quote" method="post">
+    <div class="form-group">
+        <input name="symbol" class="form-control" placeholder="Symbol" />
+    </div>
+    <button class="btn btn-primary" type="submit">Quote</button>
+</form>
+
+{% endblock %}

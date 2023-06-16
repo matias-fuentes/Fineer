@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block sell %} {% if errorMessage %}
+<div class="error-container">
+    <p class="error">{{ errorMessage }}</p>
+</div>
+{% endif %}
+
+<form actiom="/sell" method="post">
+    <div class="sell-form-control">
+        <select name="symbol" class="form-control">
+            {% for symbol in ownedSymbols %}
+            <option value="{{ symbol }}">{{ symbol }}</option>
+            {% endfor %}
+        </select>
+        <input name="shares" class="form-control" placeholder="Shares" type="number" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Sell</button>
+    </div>
+</form>
+
+{% endblock %}
