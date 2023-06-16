@@ -1,0 +1,12 @@
+.error-container {
+    display: inline-block;
+    background-color: rgb(243, 216, 218);
+    padding: 0.8rem 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.error {
+    color: rgb(125, 61, 62);
+    font-weight: bold;
+    margin-bottom: 0;
+}
