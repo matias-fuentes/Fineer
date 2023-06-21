@@ -1,5 +1,8 @@
-[Fineer](https://cs50.harvard.edu/college/2020/fall/psets/9/finance/#c50-finance)
-=======================================================================================
+# [Fineer](https://cs50.harvard.edu/college/2020/fall/psets/9/finance/#c50-finance)
+
+WEBPAGE: https://fineer.vercel.app
+
+## Description
 
 Implement a website via which users can "buy" and "sell" stocks, a la the below.
 
