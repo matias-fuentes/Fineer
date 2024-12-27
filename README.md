@@ -1,4 +1,4 @@
-# [Problem set 9: Finance](https://cs50.harvard.edu/college/2020/fall/psets/9/finance/#c50-finance)
+# [Problem set 9: C$50 Finance](https://cs50.harvard.edu/college/2020/fall/psets/9/finance/#c50-finance)
 
 Implement a website via which users can "buy" and "sell" stocks, a la the below.
 
